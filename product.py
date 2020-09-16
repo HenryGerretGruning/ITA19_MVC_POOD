@@ -14,19 +14,15 @@ class Product:
     # setters
     def setName(self, name):
         self.__name = name
-
     def setPrice(self, price):
         self.__price = price
-
     def setAmount(self, amount):
         self.__amount = amount
 
     # getters
     def getName(self):
         return self.__name
-
     def getPrice(self):
         return self.__price
-
     def getAmount(self):
         return self.__amount
