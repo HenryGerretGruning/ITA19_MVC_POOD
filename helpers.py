@@ -15,3 +15,11 @@ def addItem(name, price, amount):
         raise exceptions.ItemExists("Item {} is exists".format(name))
     else:
         items.append(product)
+# show items
+def showItems():
+    global items
+    # control if items exists
+    if len(items) == 0:
+        raise exceptions.ItemExists("List of items is empty")
+    else:
+        return items

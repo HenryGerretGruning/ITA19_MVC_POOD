@@ -7,3 +7,6 @@ class Model:
     # add item to items
     def addItem(self, name, price, amount):
         helpers.addItem(name, price, amount)
+    # show items
+    def showItems(self):
+        return helpers.showItems()

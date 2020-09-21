@@ -10,3 +10,7 @@ class Controller:
             print("Ok!")
         except:
             print("Problem!")
+
+    def showItems(self):
+        items = self.model.showItems()
+        self.view.showItems(items)
