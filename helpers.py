@@ -16,6 +16,20 @@ def addItem(name, price, amount):
         raise exceptions.ItemExists("Item {} is exists".format(name))
     else:
         items.append(product)
+# delete item
+def deleteItem(name):
+    global items
+    # control all items step by step
+    for item in items:
+        # if the name is the same as we search
+        if (item.getName() == name):
+            items.remove(item)
+
+
+        else:
+            continue
+            raise exceptions.ItemExists("Not found {} item".format(name))
+
 # show items
 def showItems():
     global items
@@ -36,3 +50,5 @@ def showItem(name):
         else:
             continue
             raise exceptions.ItemExists("Not found {} item".format(name))
+
+

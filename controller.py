@@ -10,6 +10,15 @@ class Controller:
             print("Ok!")
         except:
             print("Problem!")
+    # delete item
+    def deleteItem(self, name):
+        try:
+            print("Controller working")
+            self.model.deleteItem(name)
+            self.view.deleteItem(name)
+
+        except:
+            print("Failed to remove item.")
 
     def showItems(self):
         items = self.model.showItems()

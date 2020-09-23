@@ -12,3 +12,4 @@ class Shop:
 
     def addProduct(self, product):
         self.products.append(product)
+
