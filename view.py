@@ -27,3 +27,5 @@ class View:
         print("============================")
         print("Shop do no not consist item {}".format(name))
         print("============================")
+    def deleteItem(self, name):
+        print("{} deleted.".format(name))
