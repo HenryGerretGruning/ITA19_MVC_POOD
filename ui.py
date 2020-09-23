@@ -20,3 +20,4 @@ shop.addItem("wine", 5.60, 5)
 
 # show items
 shop.showItems()
+shop.showItem("milk")
