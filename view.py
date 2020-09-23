@@ -16,3 +16,14 @@ class View:
         for item in items:
             df = df.append({'Name': item.getName(), 'Price': item.getPrice(), 'Amount': item.getAmount()}, ignore_index=True)
         print(df)
+
+    def showItem(self, item):
+        df = pd.DataFrame(columns=['Name', 'Price', 'Amount'])
+        df = df.append({'Name': item.getName(), 'Price': item.getPrice(), 'Amount': item.getAmount()}, ignore_index=True)
+        print(df)
+
+    # no item error
+    def noItemError(self, name):
+        print("============================")
+        print("Shop do no not consist item {}".format(name))
+        print("============================")
