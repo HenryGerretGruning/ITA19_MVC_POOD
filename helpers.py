@@ -1,4 +1,5 @@
 import exceptions
+import pandas as pd
 from product import Product
 
 # repsresents shop structure
@@ -23,3 +24,15 @@ def showItems():
         raise exceptions.ItemExists("List of items is empty")
     else:
         return items
+
+# show item
+def showItem(name):
+    global items
+    # control all items step by step
+    for item in items:
+        # if the name is the same as we search
+        if(item.getName() == name):
+            return item
+        else:
+            continue
+            raise exceptions.ItemExists("Not found {} item".format(name))
