@@ -10,3 +10,7 @@ class Model:
     # show items
     def showItems(self):
         return helpers.showItems()
+
+    # show item
+    def showItem(self, name):
+        return helpers.showItem(name)
