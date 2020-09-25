@@ -24,7 +24,10 @@ shop.showItem("milk")
 shop.deleteItem("milk")
 
 
-shop.showItem("milk")
 
-shop.deleteAll()
-shop.deleteAll()
+
+#shop.deleteAll()
+#shop.deleteAll()
+
+shop.updateItem('wine', 0.99, 20)
+shop.showItems()

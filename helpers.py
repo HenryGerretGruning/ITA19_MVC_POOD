@@ -2,6 +2,7 @@ import exceptions
 import pandas as pd
 from product import Product
 
+
 # repsresents shop structure
 # list of Product type objects
 items = []
@@ -57,5 +58,23 @@ def deleteAll():
         items.clear()
     else:
         raise exceptions.ItemExists("List empty".format())
+
+
+def updateItem(name, price, amount):
+    global items
+    # create product with reqiure description
+    product = Product(name, price, amount)
+
+    # control is item already exists
+    for item in items:
+        # if the name is the same as we search
+        if (item.getName() == name):
+            item.price = item.setPrice(price)
+            item.amount = item.setAmount(amount)
+        else:
+            continue
+            raise exceptions.ItemExists("Not found {} item".format())
+
+
 
 

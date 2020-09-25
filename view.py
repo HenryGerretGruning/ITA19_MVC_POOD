@@ -38,3 +38,8 @@ class View:
 
     def deleteAll(self):
         print("All elements were deleted.")
+
+    def updateItem(self,name):
+        print("============================")
+        print("Updated {}".format(name))
+        print("============================")

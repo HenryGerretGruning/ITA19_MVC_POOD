@@ -22,4 +22,7 @@ class Model:
     def deleteAll(self):
         helpers.deleteAll()
 
+    def updateItem(self, name, price, amount):
+        return helpers.updateItem(name, price, amount)
+
 

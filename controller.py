@@ -37,3 +37,10 @@ class Controller:
             self.view.deleteAll()
         except:
             self.view.noItemsError()
+
+    def updateItem(self, name, price, amount):
+        try:
+            self.model.updateItem(name, price, amount)
+            self.view.updateItem(name)
+        except:
+            self.view.noItemsError(name)
