@@ -13,7 +13,6 @@ class Controller:
     # delete item
     def deleteItem(self, name):
         try:
-            print("Controller working")
             self.model.deleteItem(name)
             self.view.deleteItem(name)
 
@@ -30,3 +29,11 @@ class Controller:
             self.view.showItem(item)
         except:
             self.view.noItemError(name)
+
+    def deleteAll(self):
+        try:
+            self.model.deleteAll()
+            print("Sending to view")
+            self.view.deleteAll()
+        except:
+            self.view.noItemsError()

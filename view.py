@@ -27,5 +27,14 @@ class View:
         print("============================")
         print("Shop do no not consist item {}".format(name))
         print("============================")
+
+    def noItemsError(self):
+        print("============================")
+        print("List already empty!!!".format())
+        print("============================")
+
     def deleteItem(self, name):
         print("{} deleted.".format(name))
+
+    def deleteAll(self):
+        print("All elements were deleted.")

@@ -19,3 +19,7 @@ class Model:
     def showItem(self, name):
         return helpers.showItem(name)
 
+    def deleteAll(self):
+        helpers.deleteAll()
+
+

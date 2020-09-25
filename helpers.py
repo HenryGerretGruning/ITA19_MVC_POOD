@@ -51,4 +51,11 @@ def showItem(name):
             continue
             raise exceptions.ItemExists("Not found {} item".format(name))
 
+def deleteAll():
+    global items
+    if len(items) > 0:
+        items.clear()
+    else:
+        raise exceptions.ItemExists("List empty".format())
+
 

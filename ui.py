@@ -25,3 +25,6 @@ shop.deleteItem("milk")
 
 
 shop.showItem("milk")
+
+shop.deleteAll()
+shop.deleteAll()
