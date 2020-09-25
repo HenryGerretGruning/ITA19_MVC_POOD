@@ -62,8 +62,6 @@ def deleteAll():
 
 def updateItem(name, price, amount):
     global items
-    # create product with reqiure description
-    product = Product(name, price, amount)
 
     # control is item already exists
     for item in items:
@@ -71,9 +69,10 @@ def updateItem(name, price, amount):
         if (item.getName() == name):
             item.price = item.setPrice(price)
             item.amount = item.setAmount(amount)
+
         else:
             continue
-            raise exceptions.ItemExists("Not found {} item".format())
+            raise exceptions.ItemExists("Not found {} item".format(name))
 
 
 

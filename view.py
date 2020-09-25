@@ -25,7 +25,7 @@ class View:
     # no item error
     def noItemError(self, name):
         print("============================")
-        print("Shop do no not consist item {}".format(name))
+        print("Shop do does not contain {}".format(name))
         print("============================")
 
     def noItemsError(self):

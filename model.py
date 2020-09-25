@@ -23,6 +23,6 @@ class Model:
         helpers.deleteAll()
 
     def updateItem(self, name, price, amount):
-        return helpers.updateItem(name, price, amount)
+        helpers.updateItem(name, price, amount)
 
 

@@ -41,6 +41,6 @@ class Controller:
     def updateItem(self, name, price, amount):
         try:
             self.model.updateItem(name, price, amount)
-            self.view.updateItem(name)
+            self.view.updateItem()
         except:
-            self.view.noItemsError(name)
+            self.view.noItemError(name)
