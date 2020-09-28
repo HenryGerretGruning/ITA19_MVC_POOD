@@ -10,6 +10,13 @@ class Controller:
             print("Ok!")
         except:
             print("Problem!")
+
+    def restock(self, name, price, amount):
+        try:
+            self.model.restock(name, price, amount)
+            print("Ok!")
+        except:
+            print("Problem!")
     # delete item
     def deleteItem(self, name):
         try:

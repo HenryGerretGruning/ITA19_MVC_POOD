@@ -12,15 +12,19 @@ class View:
                   #str(item.getAmount()))
             #print("---------------------------")
         #print("============================")
+        print("============================")
         df = pd.DataFrame(columns=['Name', 'Price', 'Amount'])
         for item in items:
             df = df.append({'Name': item.getName(), 'Price': item.getPrice(), 'Amount': item.getAmount()}, ignore_index=True)
         print(df)
+        print("============================")
 
     def showItem(self, item):
+        print("============================")
         df = pd.DataFrame(columns=['Name', 'Price', 'Amount'])
         df = df.append({'Name': item.getName(), 'Price': item.getPrice(), 'Amount': item.getAmount()}, ignore_index=True)
         print(df)
+        print("============================")
 
     # no item error
     def noItemError(self, name):
@@ -34,10 +38,14 @@ class View:
         print("============================")
 
     def deleteItem(self, name):
+        print("============================")
         print("{} deleted.".format(name))
+        print("============================")
 
     def deleteAll(self):
+        print("============================")
         print("All elements were deleted.")
+        print("============================")
 
     def updateItem(self,name):
         print("============================")
