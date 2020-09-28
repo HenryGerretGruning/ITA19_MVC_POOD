@@ -85,8 +85,6 @@ def moveItem(name, price, amount):
             amounta = item.getAmount()
             item.amount = item.setAmount(amounta-amount)
 
-
-
         else:
             continue
             raise exceptions.ItemExists("Not found {} item".format(name))

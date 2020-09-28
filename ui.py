@@ -17,7 +17,8 @@ wine = Product("wine", 5.60, 5)
 
 # create shop and invectory and add products to invectory
 shop = Controller(Model(Shop()), View())
-invectory = Controller(ModelInvectory(Shop()), View())
+invectory = Controller(ModelInvectory(Invectory()), View())
+
 invectory.addItem("bread", 0.80, 10)
 invectory.addItem("milk", 0.50, 50)
 invectory.addItem("wine", 5.60, 5)

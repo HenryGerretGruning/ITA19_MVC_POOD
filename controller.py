@@ -23,6 +23,7 @@ class Controller:
             self.model.deleteItem(name)
             self.view.deleteItem(name)
 
+
         except:
             print("Failed to remove item.")
 

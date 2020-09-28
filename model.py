@@ -1,5 +1,4 @@
 import helpers
-import modelInvectory
 import helpersInvectory
 
 class Model:
