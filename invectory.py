@@ -1,4 +1,5 @@
 # Invectory.py
+
 class Invectory:
     def __init__(self):
         self.products = []

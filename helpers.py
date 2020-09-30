@@ -1,5 +1,4 @@
 import exceptions
-import pandas as pd
 from product import Product
 
 
@@ -10,7 +9,7 @@ items = []
 # add item to items
 def addItem(name, price, amount):
     global items
-    # create product with reqiure description
+    # create product with reqiured description
     product = Product(name, price, amount)
     # control is item already exists
     if product in items:
@@ -29,7 +28,6 @@ def deleteItem(name):
 
         else:
             continue
-            raise exceptions.ItemExists("Not found {} item".format(name))
 
 # show items
 def showItems():
@@ -50,7 +48,6 @@ def showItem(name):
             return item
         else:
             continue
-            raise exceptions.ItemExists("Not found {} item".format(name))
 
 def deleteAll():
     global items
@@ -72,7 +69,6 @@ def updateItem(name, price, amount):
 
         else:
             continue
-            raise exceptions.ItemExists("Not found {} item".format(name))
 
 
 

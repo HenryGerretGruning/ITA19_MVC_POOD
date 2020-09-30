@@ -1,5 +1,4 @@
 import exceptions
-import pandas as pd
 from product import Product
 
 
@@ -14,7 +13,7 @@ def addItem(name, price, amount):
     product = Product(name, price, amount)
     # control is item already exists
     if product in itemsInInvectory:
-        raise exceptions.ItemExists("Item {} is exists".format(name))
+        raise exceptions.ItemExists("Item {} exists".format(name))
     else:
         itemsInInvectory.append(product)
 # delete item
@@ -29,7 +28,7 @@ def deleteItem(name):
 
         else:
             continue
-            raise exceptions.ItemExists("Not found {} item".format(name))
+            raise exceptions.ItemExists("{} not found!".format(name))
 
 # show items
 def showItems():
@@ -50,14 +49,14 @@ def showItem(name):
             return item
         else:
             continue
-            raise exceptions.ItemExists("Not found {} item".format(name))
+            raise exceptions.ItemExists("{} not found!".format(name))
 
 def deleteAll():
     global itemsInInvectory
     if len(itemsInInvectory) > 0:
         itemsInInvectory.clear()
     else:
-        raise exceptions.ItemExists("List empty".format())
+        raise exceptions.ItemExists("List is empty".format())
 
 
 def updateItem(name, price, amount):
@@ -72,7 +71,7 @@ def updateItem(name, price, amount):
 
         else:
             continue
-            raise exceptions.ItemExists("Not found {} item".format(name))
+            raise exceptions.ItemExists("{} not found!".format(name))
 
 
 def moveItem(name, price, amount):
@@ -87,5 +86,5 @@ def moveItem(name, price, amount):
 
         else:
             continue
-            raise exceptions.ItemExists("Not found {} item".format(name))
+            raise exceptions.ItemExists("{} not found!".format(name))
 

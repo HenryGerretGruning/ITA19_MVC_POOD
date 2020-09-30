@@ -1,7 +1,7 @@
 import helpersInvectory
 
 class ModelInvectory:
-    # get shop data - [] of products
+    # get Invectory data - [] of products
     def __init__(self, items):
         self.items = items
     # add item to items
