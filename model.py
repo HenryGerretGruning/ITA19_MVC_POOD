@@ -26,5 +26,5 @@ class Model:
 
     def updateItem(self, name, price, amount):
         helpers.updateItem(name, price, amount)
-
+        helpersInvectory.moveItem(name, price, amount)
 

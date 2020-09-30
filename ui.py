@@ -39,5 +39,6 @@ invectory.showItems()
 #shop.deleteAll()
 #shop.deleteAll()
 
-#shop.updateItem('wine', 0.99, 20)
+#shop.updateItem('wine', 0.99, 2)
 #shop.showItems()
+#invectory.showItems()
